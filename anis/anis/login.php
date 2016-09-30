@@ -22,7 +22,7 @@
                                 //var_dump($data);exit;
                                 if ($data != null) {
                                     session_start();
-                                    $_SESSION['login'] = $data['email'];
+                                    $_SESSION['email'] = $data['email'];
                                     header('Location: reserve.php');
                                     exit();
                                 }
